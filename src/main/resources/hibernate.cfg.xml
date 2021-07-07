@@ -10,13 +10,15 @@
         <property name="connection.username">root</property>
         <property name="connection.password">Mrin@!mv</property>
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <mapping class="com.hibernate.entity.Student"/>
         <mapping class="com.hibernate.entity.Address"/>
-        <mapping class="com.hibernate.mappings.Question"/>
-        <mapping class="com.hibernate.mappings.Answer"/>
+        <mapping class="com.hibernate.OneToOne.Question"/>
+        <mapping class="com.hibernate.OneToOne.Answer"/>
         <mapping class="com.hibernate.OneToOneExercise.Customer"/>
         <mapping class="com.hibernate.OneToOneExercise.Account"/>
+        <mapping class="com.hibernate.OneToMany.QuestionOneToMany"/>
+        <mapping class="com.hibernate.OneToMany.AnswerOneToMany"/>
     </session-factory>
 </hibernate-configuration>

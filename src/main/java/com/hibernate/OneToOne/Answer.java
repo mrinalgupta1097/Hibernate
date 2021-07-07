@@ -1,4 +1,4 @@
-package com.hibernate.mappings;
+package com.hibernate.OneToOne;
 
 import lombok.*;
 

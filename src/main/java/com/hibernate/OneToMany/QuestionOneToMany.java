@@ -1,23 +1,23 @@
-package com.hibernate.mappings;
+package com.hibernate.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Question {
+public class QuestionOneToMany {
     @Id
     @Column(name = "question_id")
     private int questionId;
     private String question;
-    @OneToOne
-    @JoinColumn(name = "answer_id")
-    private Answer answer;
+    @OneToMany(mappedBy = "question")
+    private List<AnswerOneToMany> answerList;
 
 
 
