@@ -16,5 +16,7 @@
         <mapping class="com.hibernate.entity.Address"/>
         <mapping class="com.hibernate.mappings.Question"/>
         <mapping class="com.hibernate.mappings.Answer"/>
+        <mapping class="com.hibernate.OneToOneExercise.Customer"/>
+        <mapping class="com.hibernate.OneToOneExercise.Account"/>
     </session-factory>
 </hibernate-configuration>
