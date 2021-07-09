@@ -20,6 +20,6 @@ public class AnswerOneToMany {
     private int answerId;
     private String answer;
 
-    @ManyToOne
+    @ManyToOne //In one to many side  normally many side is the one which is the owner of the relation
     private QuestionOneToMany question;
 }
