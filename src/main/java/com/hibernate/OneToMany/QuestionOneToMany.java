@@ -19,7 +19,7 @@ public class QuestionOneToMany {
     @OneToMany(mappedBy = "question")
     private List<AnswerOneToMany> answerList;
     /*
-    *mappedBy is usually placed in the nonownerside of relation. It contains the
+    *mappedBy is usually placed in the non-owner side of relation. It contains the
     * name of property of owner class which owns the relation and needed only when the relation is bidirectional.
      */
 

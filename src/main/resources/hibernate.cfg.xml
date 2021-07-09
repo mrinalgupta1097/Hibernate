@@ -20,5 +20,7 @@
         <mapping class="com.hibernate.OneToOneExercise.Account"/>
         <mapping class="com.hibernate.OneToMany.QuestionOneToMany"/>
         <mapping class="com.hibernate.OneToMany.AnswerOneToMany"/>
+        <mapping class="com.hibernate.OneToManyExercise.ServicesCards"/>
+        <mapping class="com.hibernate.OneToManyExercise.Employee"/>
     </session-factory>
 </hibernate-configuration>
